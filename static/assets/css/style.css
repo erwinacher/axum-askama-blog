@@ -106,7 +106,9 @@ input {
 /* Scroll Header */
 
 /*=============== Home ===============*/
-
+.home {
+  background: url(/static/assets/img/home-bg.jpg);
+}
 /*=============== Hello ===============*/
 
 /*=============== Buttons ===============*/

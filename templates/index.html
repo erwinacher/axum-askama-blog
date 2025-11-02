@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--=============== Remixicons ===============-->
-    <link rel="stylesheet" href="/static/assets/css/remixicon.css" />
+    <!-- <link rel="stylesheet" href="/static/assets/css/remixicon.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <!--=============== Css ===============-->
     <link rel="stylesheet" href="/static/assets/css/style.css" />
     <title>{{ title }}</title>
@@ -16,6 +20,37 @@
       <section class="home" id="home">
         <div class="home__container container grid">
           <img src="/static/assets/img/profile.png" alt="" class="home__img" />
+          <div class="home__data">
+            <h1 class="home__name">Erwin Acher_</h1>
+            <p class="home__work">
+              Rust, C++ and Python Engineer | Data Engineer | Machine Learning
+              Engineer
+            </p>
+            <dl class="home__list">
+              <dt>PHONE:</dt>
+              <dd>+44 7883273311</dd>
+              <dt>EMAIL:</dt>
+              <dd>erwin.acher@gmail.com</dd>
+            </dl>
+            <div class="home__socials">
+              <a
+                href="https://github.com/erwinacher"
+                class="href"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ervinb"
+                class="href"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="ri-linkedin-box-fill"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
