@@ -3,64 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--=============== Remixicons ===============-->
-    <!-- <link rel="stylesheet" href="/static/assets/css/remixicon.css" /> -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <!--=============== Css ===============-->
-    <link rel="stylesheet" href="/static/assets/css/style.css" />
-    <title>{{ title }}</title>
+    <title>Erwin Acher</title>
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #00ff88;
+        font-family: "Fira Code", monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin: 0.5rem;
+      }
+
+      .cursor {
+        display: inline-block;
+        width: 1ch;
+        background-color: #00ff88;
+        animation: blink 1s infinite;
+        margin-left: 0.1em;
+      }
+
+      @keyframes blink {
+        50% {
+          background-color: transparent;
+        }
+      }
+
+      .subtext {
+        font-size: 1rem;
+        color: #00aa55;
+        margin-top: 0.5rem;
+        opacity: 0.8;
+      }
+
+      /* .footer {
+        position: absolute;
+        bottom: 20px;
+        font-size: 0.5rem;
+        color: #00aa55;
+        opacity: 0.8;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      } */
+
+      .footer {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column; /* stack items vertically */
+        align-items: center; /* center horizontally */
+        justify-content: center; /* optional: center vertically within footer space */
+        text-align: center;
+        gap: 0.7rem; /* spacing between lines */
+        font-size: 0.9rem;
+        color: #00aa55;
+        opacity: 0.8;
+      }
+
+      .footer a {
+        color: #00ff88; /* match your glow */
+        text-decoration: none; /* kill the underline */
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        transition: color 0.2s ease, opacity 0.2s ease;
+      }
+      /* .footer a {
+        color: #00ff88;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.2s ease;
+      } */
+
+      .footer a:hover {
+        color: #00ffaa; /* lighter glow on hover */
+        opacity: 1;
+      }
+
+      .footer img {
+        width: 18px;
+        height: 18px;
+        filter: brightness(0) saturate(100%) invert(64%) sepia(92%)
+          saturate(516%) hue-rotate(93deg) brightness(102%) contrast(102%);
+      }
+
+      .footer span {
+        margin-left: 0.3rem;
+      }
+    </style>
   </head>
   <body>
-    <!--=============== Main ===============-->
-    <main class="main">
-      <!--=============== Home ===============-->
-      <section class="home" id="home">
-        <div class="home__container container grid">
-          <img src="/static/assets/img/profile.png" alt="" class="home__img" />
-          <div class="home__data">
-            <h1 class="home__name">Erwin Acher_</h1>
-            <p class="home__work">
-              Rust, C++ and Python Engineer | Data Engineer | Machine Learning
-              Engineer
-            </p>
-            <dl class="home__list">
-              <dt>PHONE:</dt>
-              <dd>+44 7883273311</dd>
-              <dt>EMAIL:</dt>
-              <dd>erwin.acher@gmail.com</dd>
-            </dl>
-            <div class="home__socials">
-              <a
-                href="https://github.com/erwinacher"
-                class="href"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-github-fill"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ervinb"
-                class="href"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="ri-linkedin-box-fill"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+    <!-- <h1>&gt; Erwin&nbsp;Acher<span class="cursor"></span></h1> -->
+    <h1>Erwin&nbsp;Acher</h1>
+    <div class="subtext">AI | C++ | Rust | Python</div>
 
-    <!--=============== Js ===============-->
-    <script src="/static/assets/js/main.js"></script>
-    <!-- <h1>Hello, {{ name }}</h1>
-    <p>
-      This page is rendered with <strong>Askama</strong> and served by
-      <strong>Axum</strong>
-    </p> -->
+    <div class="footer">
+      <div>coming soon</div>
+      <div>built with <bold>Rust | Axum | Askama</bold></div>
+      <div>
+        <a
+          href="https://github.com/erwinacher"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+            alt="GitHub"
+          />
+        </a>
+      </div>
+    </div>
   </body>
 </html>
