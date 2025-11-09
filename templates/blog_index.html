@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}Blog{% endblock %} {% block content
+%}
+<main class="max-w-5xl mx-auto font-mono">
+  <h1 class="text-3xl font-bold mb-6 text-green-300">> Blog Archive</h1>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for post in posts %} {% include "partials/blog_card.html" %} {% else %}
+    <p class="text-gray-400">
+      No posts yet. Time to write something, commander 🦀.
+    </p>
+    {% endfor %}
+  </section>
+</main>
+{% endblock %}

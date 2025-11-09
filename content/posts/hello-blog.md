@@ -1,13 +1,13 @@
 ---
-title: "Hello World from Rust"
+title: "Hello Blog from Rust"
 date: "2025-11-03"
-excerpt: "Your first blog post using Axum + Askama + gray_matter"
+excerpt: "First blog post using Axum + Askama + gray_matter"
 category: "intro"
 read_time: "3 min"
-slug: "hello-world"
+slug: "hello-blog"
 ---
 
-Welcome to **your first post**!
+Welcome to **first post**!
 
 This page is parsed automatically using the `gray_matter` crate.
 

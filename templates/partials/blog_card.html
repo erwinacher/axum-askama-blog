@@ -1,0 +1,12 @@
+<div class="card">
+  <a
+    href="/blog/{{ post.slug }}"
+    class="block hover:bg-gray-800 p-4 rounded-lg transition-colors"
+  >
+    <h2 class="text-xl font-bold mb-1">{{ post.title }}</h2>
+    <p class="text-sm text-gray-400 mb-2">
+      {{ post.date }} · {{ post.read_time }}
+    </p>
+    <p class="text-gray-300">{{ post.excerpt }}</p>
+  </a>
+</div>
