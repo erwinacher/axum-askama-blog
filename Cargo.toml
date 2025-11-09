@@ -10,5 +10,10 @@ pulldown-cmark = "0.13.0"
 serde = { version = "1.0.228", features = ["derive"] }
 serde_yaml = "0.9.34"
 tokio = { version = "1.48.0", features = ["full"] }
-tower-http = { version = "0.6.6", features = ["fs"] }
-walkdir = "2.5.0"
+tower-http = { version = "0.6.4", features = ["fs", "set-header"] }
+http = "1.3.1"
+walkdir = "2.4.0"
+tower-layer = "0.3.3"
+chrono = "0.4"
+gray_matter = { version = "0.3.2", features = ["yaml"] }
+

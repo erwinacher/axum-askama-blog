@@ -3,130 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erwin Acher</title>
-    <style>
-      body {
-        background-color: #0a0a0a;
-        color: #00ff88;
-        font-family: "Fira Code", monospace;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin: 0.5rem;
-      }
-
-      .cursor {
-        display: inline-block;
-        width: 1ch;
-        background-color: #00ff88;
-        animation: blink 1s infinite;
-        margin-left: 0.1em;
-      }
-
-      @keyframes blink {
-        50% {
-          background-color: transparent;
-        }
-      }
-
-      .subtext {
-        font-size: 0.9rem;
-        color: #00aa55;
-        margin-top: 0.5rem;
-        opacity: 0.8;
-      }
-
-      /* .footer {
-        position: absolute;
-        bottom: 20px;
-        font-size: 0.5rem;
-        color: #00aa55;
-        opacity: 0.8;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      } */
-
-      .footer {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: flex;
-        flex-direction: column; /* stack items vertically */
-        align-items: center; /* center horizontally */
-        justify-content: center; /* optional: center vertically within footer space */
-        text-align: center;
-        gap: 0.7rem; /* spacing between lines */
-        font-size: 0.9rem;
-        color: #00aa55;
-        opacity: 0.8;
-      }
-
-      .footer a {
-        color: #00ff88; /* match your glow */
-        text-decoration: none; /* kill the underline */
-        display: flex;
-        align-items: center;
-        gap: 0.3rem;
-        transition: color 0.2s ease, opacity 0.2s ease;
-      }
-      /* .footer a {
-        color: #00ff88;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        transition: opacity 0.2s ease;
-      } */
-
-      .footer a:hover {
-        color: #00ffaa; /* lighter glow on hover */
-        opacity: 1;
-      }
-
-      .footer img {
-        width: 18px;
-        height: 18px;
-        filter: brightness(0) saturate(100%) invert(64%) sepia(92%)
-          saturate(516%) hue-rotate(93deg) brightness(102%) contrast(102%);
-      }
-
-      .footer span {
-        margin-left: 0.3rem;
-      }
-    </style>
+    <link rel="stylesheet" href="/static/assets/css/style.css" />
+    <title>sifirai</title>
   </head>
   <body>
-    <!-- <h1>&gt; Erwin&nbsp;Acher<span class="cursor"></span></h1> -->
-    <h1>Erwin&nbsp;Acher</h1>
-    <div>
-      <div class="subtext">C++ | Rust | Python</div>
-      <div class="subtext">Data Engineering | LLMOps | GenAI | Gaming</div>
-    </div>
+  <!-- <h1>&gt; Erwin&nbsp;Acher<span class="cursor"></span></h1> -->
+  <h1>Erwin&nbsp;Acher</h1>
+  <div>
+    <div class="subtext">C++ | Rust | Python</div>
+    <div class="subtext">Data Engineering | LLMOps | GenAI | Gaming</div>
+  </div>
 
-    <div class="footer">
-      <div><strong>coming soon</strong></div>
-      <div>powered by AWS and EC2</div>
-      <div>built with <strong>Rust | Axum | Askama</strong></div>
-      <div>
-        <a
-          href="https://github.com/erwinacher"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
-            alt="GitHub"
-          />
-        </a>
-      </div>
+  <div class="footer">
+    <div><strong>coming soon</strong></div>
+    <div>powered by AWS and EC2</div>
+    <div>built with <strong>Rust | Axum | Askama</strong></div>
+    <div>
+      <a
+              href="https://github.com/erwinacher"
+              target="_blank"
+              rel="noopener noreferrer"
+      >
+        <img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+                alt="GitHub"
+        />
+      </a>
     </div>
+  </div>
   </body>
 </html>

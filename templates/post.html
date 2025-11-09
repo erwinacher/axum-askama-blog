@@ -1,7 +1,9 @@
 {% extends "base.html" %} {% block title %}{{ post.title }}{% endblock %} {%
 block content %}
-<h1>{{ post.title }}</h1>
-<p><small>{{ post.date }}</small></p>
-<div>{{ post.html | safe }}</div>
-<p><a href="/blog">back to blog</a></p>
+<main class="font-mono text-foreground">
+  <h1>{{ post.title }}</h1>
+  <p><small>{{ post.date }} · {{ post.read_time }}</small></p>
+  <div>{{ post.html | safe }}</div>
+  <p><a href="/blog">← Back to blog</a></p>
+</main>
 {% endblock %}
